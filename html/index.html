@@ -7,27 +7,50 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="container">
+    <header class="l-header">
+        <h1>Logo</h1>
+        </header>
        <div class="c-btn">
-        <div class="c-btn_1"><p>Paragraph 01</p></div>
-        <div class="c-btn_1"><p>Paragraph 02</p></div>
-        <!-- <div class="c-btn_1--color"><p>Paragraph 03</p></div> Another One -->
-        <div class="c-btn_1"><p>Paragraph 06</p></div>
-       </div>
-       <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt molestias dolorum quibusdam velit. Voluptate, quam. Est assumenda temporibus neque perspiciatis ea rem ullam quia animi aperiam sit ab, repellat dolores.</p></div>
-       <div class="c-btn">
-        <div class="c-btn_1"><p>Paragraph 04</p></div>
-        <div class="c-btn_1"><p>Paragraph 05</p></div>
-        <div class="c-btn_1"><p>Paragraph 06</p></div>
-       </div>
-       <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt molestias dolorum quibusdam velit. Voluptate, quam. Est assumenda temporibus neque perspiciatis ea rem ullam quia animi aperiam sit ab, repellat dolores.</p></div>
-       <div class="c-btn">
-        <div class="c-btn_1"><p>Paragraph 07</p></div>
-        <div class="c-btn_1"><p>Paragraph 08</p></div>
-        <div class="c-btn_1"><p>Paragraph 09</p></div>
-       </div>
-       <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt molestias dolorum quibusdam velit. Voluptate, quam. Est assumenda temporibus neque perspiciatis ea rem ullam quia animi aperiam sit ab, repellat dolores.</p></div>
+        <div class="c-btn__1"><p>Paragraph 01</p></div>
+        <div class="c-btn__1"><p>Paragraph 02</p></div>
+        <div class="c-btn__1"><p>Paragraph 03</p></div>
+        </div>
+   
+        
+       <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt molestias dolorum quibusdam velit. Voluptate, quam. Est assumenda temporibus neque perspiciatis ea rem ullam quia animi aperiam sit ab, repellat dolores.</p>
+       
+       <div class="c-btn__1"><p>Paragraph 01</p></div>
+       <div class="c-btn__1"><p>Paragraph 02</p></div>
+       <div class="c-btn__1"><p>Paragraph 03</p></div>
+       
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt molestias dolorum quibusdam velit. Voluptate, quam. Est assumenda temporibus neque perspiciatis ea rem ullam quia animi aperiam sit ab, repellat dolores.</p>
+      
+      <div class="c-btn__1"><p>Paragraph 01</p></div>
+      <div class="c-btn__1"><p>Paragraph 02</p></div>
+      <div class="c-btn__1"><p>Paragraph 03</p></div>
+      
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt molestias dolorum quibusdam velit. Voluptate, quam. Est assumenda temporibus neque perspiciatis ea rem ullam quia animi aperiam sit ab, repellat dolores.</p>
+     
+    </div> -->
     
-    </div>
+    <script>
+        let header=document.querySelector('.l-header');
+        header.innerText='Header';
+
+        let newNode=document.createElement('div');
+        newNode.innerHTML="<p>Zaw Zaw</p>";
+        newNode.classList.add('newclass');
+        
+         let selectedNode=document.querySelector('.c-btn');
+        // selecteNode.appendChild(newNode);
+
+        let referenceNode=document.querySelectorAll('.c-btn__1')[0];
+        selectedNode.insertBefore(newNode,referenceNode);
+        document.querySelector('.newclass').remove();
+    </script>
 </body>
+    <div>
+        <h1>hello</h1>
+    </div>
+
 </html>
